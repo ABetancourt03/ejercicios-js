@@ -1,0 +1,140 @@
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --amarillo: #f7df1e;
+  --amarillo-0-85: rgba(247, 222, 30, 0.85);
+  --amarillo-0-50: rgba(247, 222, 30, 0.5);
+  --negro: #222;
+  --negro-0-85: rgba(34, 34, 34, 0.85);
+  --negro-0-80: rgba(34, 34, 34, 0.8);
+  --negro-0-50: rgba(34, 34, 34, 0.5);
+  --negro-0-25: rgba(34, 34, 34, 0.25);
+  --container-width: 1200px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fae24621;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background-color: var(--amarillo);
+  box-shadow: 2px 2px 20px var(--negro-0-25);
+  color: var(--negro);
+  width: 100%;
+  text-align: center;
+  left: 0;
+  z-index: 999;
+}
+
+.header h1 {
+  margin: auto;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: var(--container-width);
+  min-height: 100vh;
+  text-align: center;
+  color: var(--negro);
+}
+
+.btn-menu {
+  position: fixed;
+  z-index: 999;
+  top: 0vh;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--amarillo);
+}
+
+.btn-menu:hover {
+  cursor: pointer;
+}
+
+.panel {
+  position: fixed;
+  background-color: var(--negro);
+  width: 20vw;
+  display: none;
+}
+
+.panel-on {
+  display: block;
+}
+
+.menu a {
+  font-weight: bold;
+  display: block;
+  width: 20vw;
+  text-decoration: none;
+  color: var(--amarillo);
+  font-size: 14px;
+  padding: 10px;
+  text-align: left;
+  transition: 0.5s;
+}
+
+.menu a:hover {
+  font-weight: bold;
+  background-color: var(--amarillo);
+  color: var(--negro);
+  transition: 0.5s;
+}
+
+/* Ejercicio 1. Comparar Números */
+.btn {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: var(--negro);
+  background-color: var(--amarillo);
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: var(--amarillo);
+  background-color: var(--negro);
+  border-color: var(--amarillo);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* Ejercicio 2. Calculadora */
