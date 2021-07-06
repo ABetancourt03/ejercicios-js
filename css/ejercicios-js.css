@@ -138,3 +138,193 @@ section {
 }
 
 /* Ejercicio 2. Calculadora */
+
+@media (max-width: 860px) {
+  .panel {
+    position: fixed;
+    background-color: var(--negro-0-85);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+  }
+
+  .panel-on {
+    display: block;
+  }
+
+  .menu a {
+    font-weight: bold;
+    display: block;
+    width: 100vw;
+    text-decoration: none;
+    color: var(--amarillo);
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+    transition: 0.5s;
+  }
+
+  .menu a:hover {
+    font-weight: bold;
+    background-color: var(--amarillo);
+    color: var(--negro);
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-menu {
+    position: fixed;
+    z-index: 998;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    display: block;
+    background-color: var(--amarillo);
+  }
+
+  .btn {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--negro);
+    background-color: var(--amarillo);
+    transition: 0.5s;
+  }
+
+  .btn:hover {
+    color: var(--amarillo);
+    background-color: var(--negro);
+    border-color: var(--amarillo);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .panel {
+    z-index: 999;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-menu {
+    display: none;
+  }
+
+  .btn {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--negro);
+    background-color: var(--amarillo);
+    transition: 0.5s;
+  }
+
+  .btn:hover {
+    color: var(--amarillo);
+    background-color: var(--negro);
+    border-color: var(--amarillo);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .btn-menu {
+    position: fixed;
+    z-index: 999;
+    top: 4vh;
+    left: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--amarillo);
+  }
+
+  section {
+    padding: 2rem;
+    padding-top: 6.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: var(--container-width);
+    min-height: 100vh;
+    text-align: center;
+    color: var(--negro);
+  }
+}
+
+@media (max-width: 280px) {
+  .btn-menu {
+    position: fixed;
+    z-index: 998;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    display: block;
+    background-color: var(--amarillo);
+  }
+
+  .btn {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--negro);
+    background-color: var(--amarillo);
+    transition: 0.5s;
+  }
+
+  .btn:hover {
+    color: var(--amarillo);
+    background-color: var(--negro);
+    border-color: var(--amarillo);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .btn-menu {
+    position: fixed;
+    z-index: 999;
+    top: 4vh;
+    left: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--amarillo);
+  }
+
+  section {
+    padding: 2rem;
+    padding-top: 6.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: var(--container-width);
+    min-height: 100vh;
+    text-align: center;
+    color: var(--negro);
+  }
+}

@@ -5,7 +5,7 @@ const $btnMenu = d.querySelector(".btn-menu").addEventListener("click", btnMenu)
 const $panel = d.querySelector(".panel");
 d.addEventListener("scroll", close);
 
-function btnMenu(e) {
+function btnMenu() {
   if ($panel.classList.contains("panel-on")) {
     $panel.classList.remove("panel-on");
   } else {
